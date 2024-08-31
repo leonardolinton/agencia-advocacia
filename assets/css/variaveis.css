@@ -1,0 +1,41 @@
+:root {
+    /*========== DIMENSIONS ==========*/
+    --max-width: 90%;
+    --max-height: 100vh;
+
+    /*========== FONT SIZE ==========*/
+    --h1-font-size: 3.3rem;
+    --h2-font-size: 3rem;
+    --h3-font-size: 1.7rem;
+    --h4-font-size: 1.7rem;
+    --h5-font-size: 1.5rem;
+    --f1-font-size: 1.1rem;
+    --f2-font-size: 1.1rem;
+    --f3-font-size: 0.75rem;
+
+    /*========== FONT WEIGHT ==========*/
+    --font-light: 300;
+    --font-mediaum: 500;
+    --font-bold: 700;
+
+
+    /*========== COLORS ==========*/
+    --bg-color: #F5F6F7;
+    --color-01: #E4C074;
+    --color-02: #2D313D;
+    --color-03: #17191F;
+}
+
+/*========== FONTS RESPONSIVE ==========*/
+@media screen and (max-width: 950px) {
+    :root {
+        --h1-font-size: 3rem;
+        --h2-font-size: 2rem;
+        --h3-font-size: 1.5rem;
+        --h4-font-size: 1.3rem;
+        --h5-font-size: 1.1rem;
+        --f1-font-size: 1rem;
+        --f2-font-size: 0.813rem;
+        --f3-font-size: 0.75rem;
+    }
+}
