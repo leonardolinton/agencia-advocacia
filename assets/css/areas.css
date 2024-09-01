@@ -2,11 +2,12 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: var(--bg-color);
+    background-color: var(--color-01);
 }
 
 .areas-box{
-    max-width: var(--max-width);
+    padding: 5vh 0;
+    max-width: var(--max-width-box);
 }
 
 .areas-box-cards{
@@ -17,6 +18,7 @@
 .areas-box-card{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     padding: 2rem;
     gap: 2rem;
     align-items: center;
@@ -28,8 +30,21 @@
 .areas-box-card h3{
   text-transform: capitalize;
   font-size: var(--h3-font-size);
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
-.areas-box-card span{
+
+.areas-box-card h3::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    height: 1px;
+    width: 50px;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+}
+.areas-box-card p{
     font-size: var(--f1-font-size);
 }
 
@@ -40,13 +55,28 @@
     background-color: var(--color-02);
 }
 
+.areas-box-card button{
+    background-color: transparent;
+    padding: 1rem 2rem;
+}
+
+.areas-box-card button a{
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: solid 1px var(--color-01);
+    background-color: transparent;
+}
+.areas-box-card button a span{
+    color: var(--color-01);
+    font-size: var(--f1-font-size);
+}
 
 .areas-box-card img{
-    max-width: 30%;
+    max-width: 20%;
     height: auto;
 }
 
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1160px) {
     .areas-box-cards{
         grid-template-columns: 1fr 1fr;
     }

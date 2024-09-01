@@ -1,0 +1,86 @@
+#sobre {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-01);
+    margin-bottom: 10vh;
+    position: relative;
+
+}
+
+.sobre-box {
+    width: var(--max-width-box);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+.sobre-box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre-box-left h2 {
+    color: var(--color-03);
+    margin-bottom: 1rem;
+    font-size: var(--h2-font-size);
+}
+
+.sobre-box-left p {
+    max-width: 90%;
+    text-align: justify;
+    font-size: var(--f1-font-size);
+    color: var(--color-02);
+}
+
+
+.sobre-box-right {
+    width: 100%;
+    height: 50vh;
+    width: 50%;
+    right: 0;
+}
+
+.sobre-box-right figure {
+    position: absolute;
+    background-image: url(../img/sobre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    right: 0;
+}
+
+.sobre-box-right figure::after {
+    content: '';
+    width: 100%;
+    max-height: inherit;
+    position: absolute;
+    inset: 0;
+    background: var(--bg-color);
+}
+
+@media screen and (max-width: 1070px) {
+    .sobre-box {
+        width: var(--max-width-box);
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .sobre-box-left p {
+        max-width: 100%;
+    }
+
+    .sobre-box-right{
+        margin-top: 5vh;
+        height: 50vw;
+    }
+
+    .sobre-box-right figure {
+        height: 50vw;
+        width: 100%;
+        right: 0;
+    }
+}

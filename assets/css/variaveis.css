@@ -1,6 +1,6 @@
 :root {
     /*========== DIMENSIONS ==========*/
-    --max-width: 90%;
+    --max-width-box: 90%;
     --max-height: 100vh;
 
     /*========== FONT SIZE ==========*/
@@ -15,15 +15,15 @@
 
     /*========== FONT WEIGHT ==========*/
     --font-light: 300;
-    --font-mediaum: 500;
+    --font-medium: 500;
     --font-bold: 700;
 
 
     /*========== COLORS ==========*/
-    --bg-color: #F5F6F7;
-    --color-01: #E4C074;
-    --color-02: #2D313D;
-    --color-03: #17191F;
+    --color-01: #FFFFFF;
+    --color-02: #3C3C3C;
+    --color-03: #202224;
+    --bg-color: #131416a1;
 }
 
 /*========== FONTS RESPONSIVE ==========*/

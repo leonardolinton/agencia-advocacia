@@ -22,7 +22,7 @@
     max-height: inherit;
     position: absolute;
     inset: 0;
-    background: #17191f70;
+    background: var(--bg-color);
 }
 
 .home-box {
@@ -31,7 +31,7 @@
     align-items: center;
     gap: 3rem;
     text-align: center;
-    width: var(--max-width);
+    width: var(--max-width-box);
     z-index: 1;
 }
 
@@ -46,9 +46,8 @@
 .home-box p {
     font-size: var(--f1-font-size);
     max-width: 900px;
-    color: var(--bg-color);
+    color: var(--color-01);
     line-height: 150%;
-
     text-shadow: black 0.1em 0.1em 0.2em;
 
 }
@@ -56,11 +55,11 @@
 
 .home-box button {
     background-color: transparent;
+    padding: 1.5rem 3rem;
 }
 
 .home-box button a {
-    padding: 1rem 2rem;
-    font-size: var(--f1-font-size);
+    padding: 1.5rem 3rem;
     text-decoration: none;
     color: var(--color-01);
     font-weight: 100;
@@ -68,6 +67,12 @@
     transition: 0.5s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+.home-box button span{
+    font-size: var(--f1-font-size);
+    font-weight: var(--font-medium);
+}
+
 
 .home-box button a:hover {
     color: var(--color-03);
